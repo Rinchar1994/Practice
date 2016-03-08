@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\ISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 1 -n 3
+-fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf interface.ucf
+
+Design file:              cpu.ncd
+Physical constraint file: cpu.pcf
+Device,package,speed:     xc7a100t,csg324,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+resetn      |   15.753(R)|      SLOW  |   -1.500(R)|      FAST  |clk_cpu           |   0.000|
+            |   14.753(F)|      SLOW  |   -4.960(F)|      FAST  |clk_cpu           |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Led<0>      |         7.202(F)|      SLOW  |         2.169(F)|      FAST  |clk_cpu           |   0.000|
+Led<1>      |         7.493(F)|      SLOW  |         2.283(F)|      FAST  |clk_cpu           |   0.000|
+Led<2>      |         6.853(F)|      SLOW  |         1.896(F)|      FAST  |clk_cpu           |   0.000|
+Led<3>      |         7.837(F)|      SLOW  |         2.271(F)|      FAST  |clk_cpu           |   0.000|
+Led<4>      |         8.275(F)|      SLOW  |         2.566(F)|      FAST  |clk_cpu           |   0.000|
+Led<5>      |         9.278(F)|      SLOW  |         3.144(F)|      FAST  |clk_cpu           |   0.000|
+Led<6>      |         8.553(F)|      SLOW  |         2.563(F)|      FAST  |clk_cpu           |   0.000|
+Led<7>      |         8.331(F)|      SLOW  |         2.427(F)|      FAST  |clk_cpu           |   0.000|
+Led<8>      |         7.927(F)|      SLOW  |         2.312(F)|      FAST  |clk_cpu           |   0.000|
+Led<9>      |         8.068(F)|      SLOW  |         2.374(F)|      FAST  |clk_cpu           |   0.000|
+Led<10>     |         8.783(F)|      SLOW  |         2.616(F)|      FAST  |clk_cpu           |   0.000|
+Led<11>     |         7.889(F)|      SLOW  |         2.440(F)|      FAST  |clk_cpu           |   0.000|
+Led<12>     |         8.229(F)|      SLOW  |         2.430(F)|      FAST  |clk_cpu           |   0.000|
+Led<13>     |         8.236(F)|      SLOW  |         2.406(F)|      FAST  |clk_cpu           |   0.000|
+Led<14>     |         8.888(F)|      SLOW  |         2.790(F)|      FAST  |clk_cpu           |   0.000|
+Led<15>     |         8.803(F)|      SLOW  |         2.757(F)|      FAST  |clk_cpu           |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   52.416|   13.853|   34.210|    5.046|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Dec 11 12:49:42 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 453 MB
+
+
+

@@ -1,0 +1,354 @@
+addi $1,$0,2048       #VGA显示的基地址
+addi $2,$0,192        #控制颜色，初始颜色为红色
+addi $3,$0,0          #擦除时用的黑色
+
+BEGIN:
+addi $4,$0,0
+loop:
+lw $4,1048($0)
+beq $4,$0,loop        #循环直到有键盘按键
+addi $6,$0,0x004e 
+bne $6,$4,loopr       #判断按键是否为N，否则跳到loopr
+jal CLEAR             #调用擦除子程序
+addi $5,$0,0          #延迟槽
+jal SHOWNUMBER        #调用显示学号子程序
+addi $5,$0,0
+jal DELAY             #调用延迟子程序
+addi $5,$0,0
+j BEGIN               #显示完学号，返回等待重新按键
+loopr:
+addi $6,$0,0x0052
+bne $6,$4,loopa       #判断是否为R，否则跳到loopa
+addi $2,$0,192        #将颜色设为红色
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopa:
+addi $6,$0,0x0041
+bne $6,$4,loops       #判断是否为A，否则跳到loops
+jal CLEAR
+addi $5,$0,0
+jal SHOWA             #显示字符A
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loops:
+addi $6,$0,0x0053
+bne $6,$4,loopd       #判断按键是否为S，否则跳到loopd
+jal CLEAR
+addi $5,$0,0
+jal SHOWS             #显示字符S
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopd:
+addi $6,$0,0x0044
+bne $6,$4,loopf       #判断按键是否为D，否则跳到loopf
+jal CLEAR
+addi $5,$0,0
+jal SHOWD             #显示字符D
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopf:
+addi $6,$0,0x0046
+bne $6,$4,loopg       #判断按键是否为F，否则跳到loopg
+jal CLEAR
+addi $5,$0,0
+jal SHOWF             #显示字符F
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopg:
+addi $6,$0,0x0047
+bne $6,$4,looph       #判断按键是否为G，否则跳到looph
+jal CLEAR
+addi $5,$0,0
+jal SHOWG             #显示字符G
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+looph:
+addi $6,$0,0x0048
+bne $6,$4,loopj       #判断按键是否为H，否则跳到loopj
+jal CLEAR
+addi $5,$0,0
+jal SHOWH             #显示字符H
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopj:
+addi $6,$0,0x004a
+bne $6,$4,loopk       #判断按键是否为J，否则跳到loopk
+jal CLEAR
+addi $5,$0,0
+jal SHOWJ             #显示字符J
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopk:
+addi $6,$0,0x004b
+bne $6,$4,loopl       #判断按键是否为K，否则跳到loopl
+jal CLEAR
+addi $5,$0,0
+jal SHOWK             #显示字符K
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopl:
+addi $6,$0,0x004c
+bne $6,$4,loopb       #判断按键是否为L，否则跳到loopb
+jal CLEAR
+addi $5,$0,0
+jal SHOWL             #显示字符L
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopb:
+addi $6,$0,0x0042
+bne $6,$4,loopw       #判断按键是否为B，否则跳到loopw
+addi $2,$0,3          #将颜色设置成蓝色
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loopw:
+addi $6,$0,0x0057
+bne $6,$4,loop0       #判断按键是否为W，否则跳到loop0
+addi $2,$0,255        #将颜色设置成白色
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loop0:
+addi $6,$0,0x0030
+bne $6,$4,loop1       #判断按键是否为0，否则跳到loop1
+jal CLEAR
+addi $5,$0,0
+addi $9,$0,40         #设置色块出现的初始偏移地址
+jal SHOWSPOT          #显示色块
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loop1:
+addi $6,$0,0x0031
+bne $6,$4,loop2       #判断按键是否为1，否则跳到loop2
+addi $11,$0,80
+slt $12,$9,$11
+bne $12,$0,BEGIN      #色块的上边界设定，若在边界仍要上移，则返回等待
+jal CLEARSPOT
+addi $5,$0,0
+addi $10,$0,40
+sub $9,$9,$10         #计算上移后的偏移地址
+jal SHOWSPOT
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loop2:
+addi $6,$0,0x0032
+bne $6,$4,loop3       #判断按键是否为2，否则跳到loop3
+addi $11,$0,360
+slt $12,$9,$11
+beq $12,$0,BEGIN      #色块的下边界，若在边界仍要下移，则返回等待
+jal CLEARSPOT
+addi $5,$0,0
+addi $10,$0,40
+add $9,$9,$10         #计算下移后的偏移地址
+jal SHOWSPOT
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loop3:
+addi $6,$0,0x0033
+bne $6,$4,loop4       #判断按键是否为3，否则跳到loop4
+addi $11,$0,40 
+beq $9,$11,BEGIN      #判断色块是否为左上角，若是，返回
+jal CLEARSPOT
+addi $5,$0,0
+addi $10,$0,4
+sub $9,$9,$10         #计算色块左移后的偏移地址
+jal SHOWSPOT
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+loop4:
+addi $6,$0,0x0034
+bne $6,$4,BEGIN       #判断按键是否为4，否则返回
+addi $11,$0,396
+beq $9,$11,BEGIN      #判断色块是否在右下角，若是，返回
+jal CLEARSPOT
+addi $5,$0,0
+addi $10,$0,4
+add $9,$9,$10         #计算右移后的偏移地址
+jal SHOWSPOT
+addi $5,$0,0
+jal DELAY
+addi $5,$0,0
+j BEGIN               #返回等待
+
+SHOWSPOT:             #显示色块
+sw $2,2048($9)
+jr $31                #返回jal后存在$31中的地址
+
+CLEARSPOT:            #清除色块
+sw $3,2048($9)
+jr $31
+
+DELAY:                #延迟
+lui $7,0x0004
+addi $8,$0,0
+jump:
+addi $8,$8,1
+bne $7,$8,jump
+jr $31
+
+CLEAR:                #清除字符块    
+sw $3,92($1)
+sw $3,96($1)
+sw $3,100($1)
+sw $3,140($1)
+sw $3,136($1)
+sw $3,132($1)
+sw $3,172($1)
+sw $3,176($1)
+sw $3,180($1)
+sw $3,220($1)
+sw $3,216($1)
+sw $3,212($1)
+sw $3,252($1)
+sw $3,256($1)
+sw $3,260($1)
+sw $3,224($1)
+sw $3,184($1)
+sw $3,144($1)
+jr $31
+
+SHOWNUMBER:           #显示学号
+sw $2,0($1)
+jr $31
+
+SHOWA:                #显示字符A
+sw $2,92($1)
+sw $2,96($1)
+sw $2,100($1)
+sw $2,132($1)
+sw $2,140($1)
+sw $2,172($1)
+sw $2,176($1)
+sw $2,180($1)
+sw $2,212($1)
+sw $2,252($1)
+sw $2,260($1)
+sw $2,220($1)
+jr $31
+
+SHOWS:                #显示字符S
+sw $2,92($1)
+sw $2,96($1)
+sw $2,100($1)
+sw $2,132($1)
+sw $2,172($1)
+sw $2,176($1)
+sw $2,180($1)
+sw $2,220($1)
+sw $2,260($1)
+sw $2,256($1)
+sw $2,252($1)
+jr $31
+
+SHOWD:                #显示字符D
+sw $2,92($1)
+sw $2,96($1)
+sw $2,100($1)
+sw $2,132($1)
+sw $2,172($1)
+sw $2,212($1)
+sw $2,252($1)
+sw $2,256($1)
+sw $2,260($1)
+sw $2,224($1)
+sw $2,184($1)
+sw $2,144($1)
+jr $31
+
+SHOWF:                #显示字符F
+sw $2,92($1)
+sw $2,96($1)
+sw $2,100($1)
+sw $2,132($1)
+sw $2,172($1)
+sw $2,176($1)
+sw $2,180($1)
+sw $2,212($1)
+sw $2,252($1)
+jr $31
+
+SHOWG:                #显示字符G
+sw $2,92($1)
+sw $2,96($1)
+sw $2,100($1)
+sw $2,132($1)
+sw $2,172($1)
+sw $2,212($1)
+sw $2,252($1)
+sw $2,256($1)
+sw $2,260($1)
+sw $2,220($1)
+jr $31
+
+SHOWH:                #显示字符H
+sw $2,92($1)
+sw $2,100($1)
+sw $2,132($1)
+sw $2,140($1)
+sw $2,172($1)
+sw $2,176($1)
+sw $2,180($1)
+sw $2,212($1)
+sw $2,252($1)
+sw $2,260($1)
+sw $2,220($1)
+jr $31
+
+SHOWJ:                #显示字符J
+sw $2,100($1)
+sw $2,140($1)
+sw $2,180($1)
+sw $2,220($1)
+sw $2,260($1)
+sw $2,256($1)
+sw $2,252($1)
+jr $31
+
+SHOWK:                #显示字符K
+sw $2,92($1)
+sw $2,132($1)
+sw $2,172($1)
+sw $2,212($1)
+sw $2,252($1)
+sw $2,136($1)
+sw $2,216($1)
+sw $2,100($1)
+sw $2,260($1)
+jr $31
+
+SHOWL:                #显示字符L
+sw $2,92($1)
+sw $2,132($1)
+sw $2,172($1)
+sw $2,212($1)
+sw $2,252($1)
+sw $2,256($1)
+sw $2,260($1)
+jr $31

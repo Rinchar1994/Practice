@@ -1,0 +1,77 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# do {dram_test.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 09:28:07 on Dec 07,2015
+# vlog -reportprogress 300 ipcore_dir/dram.v 
+# -- Compiling module dram
+# 
+# Top level modules:
+# 	dram
+# End time: 09:28:07 on Dec 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 09:28:07 on Dec 07,2015
+# vlog -reportprogress 300 dram_test.v 
+# -- Compiling module dram_test
+# 
+# Top level modules:
+# 	dram_test
+# End time: 09:28:07 on Dec 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 09:28:07 on Dec 07,2015
+# vlog -reportprogress 300 C:/ISE/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 09:28:07 on Dec 07,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui -do "do {dram_test.fdo}" 
+# Start time: 09:28:07 on Dec 07,2015
+# Loading work.dram_test
+# Loading work.dram
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_3
+# Loading work.glbl
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_3_mem_module
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_3_output_stage
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_3_softecc_output_reg_stage
+# ** Warning: (vsim-3015) dram_test.v(37): [PCDPC] - Port size (10) does not match connection size (8) for port 'addra'. The port definition is at: ipcore_dir/dram.v(42).
+#    Time: 0 ps  Iteration: 0  Instance: /dram_test/uut File: ipcore_dir/dram.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: JLC  Hostname: HANDSOMEJ  ProcessID: 7944
+# 
+#           Attempting to use alternate WLF file "./wlftxdrek5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftxdrek5
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  Block Memory Generator CORE Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator CORE Generator module dram_test.uut.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# End time: 09:28:25 on Dec 07,2015, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 3

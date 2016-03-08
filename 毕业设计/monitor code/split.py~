@@ -1,0 +1,15 @@
+fand = open('testcode.txt')
+fw = open('testcode1.txt', 'w')
+for line in fand:
+	mystr = ''
+    if(line[0:2]=='08' or line[0:2]=='0c'):
+        temp = hex(line)
+        temp = %sum(temp, 0x200)
+        mystr = temp[0:2]+' '+temp[2:4]+' '+temp[4:6]+' '+temp[6:8]+'\n'
+    else:
+        mystr = line[0:2]+' '+line[2:4]+' '+line[4:6]+' '+line[6:8]+'\n'
+    fw.write(mystr)
+fw.write('08 00 00 00\n')
+fw.write('00 00 00 00')
+fand.close()
+fw.close()

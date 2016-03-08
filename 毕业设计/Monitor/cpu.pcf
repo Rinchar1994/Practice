@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Dec 11 12:38:37 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Led<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "Led<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "Led<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "Led<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "Led<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "Led<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "Led<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "Led<7>" LOCATE = SITE "U16" LEVEL 1;
+COMP "Led<8>" LOCATE = SITE "V16" LEVEL 1;
+COMP "Led<9>" LOCATE = SITE "T15" LEVEL 1;
+COMP "RsRx" LOCATE = SITE "C4" LEVEL 1;
+COMP "RsTx" LOCATE = SITE "D4" LEVEL 1;
+COMP "resetn" LOCATE = SITE "N17" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "Led<12>" LOCATE = SITE "V15" LEVEL 1;
+COMP "Led<11>" LOCATE = SITE "T16" LEVEL 1;
+COMP "Led<14>" LOCATE = SITE "V12" LEVEL 1;
+COMP "Led<13>" LOCATE = SITE "V14" LEVEL 1;
+COMP "Led<10>" LOCATE = SITE "U14" LEVEL 1;
+COMP "Led<15>" LOCATE = SITE "V11" LEVEL 1;
+SCHEMATIC END;
+

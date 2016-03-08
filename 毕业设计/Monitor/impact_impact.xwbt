@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\study\Monitor\impact.xsl
+OUTFILE=C:\study\Monitor\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\study\Monitor
+LICENSE=iMPACT
+USER_INFO=iMPACT

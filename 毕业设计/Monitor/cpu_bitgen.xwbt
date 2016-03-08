@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\study\Monitor\cpu.ncd
+OUTFILE=C:\study\Monitor\cpu.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=C:\study\Monitor
+LICENSE=WebPack
+USER_INFO=__0_0_0

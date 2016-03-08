@@ -1,0 +1,65 @@
+addi $1,$0,0       #black
+addi $2,$0,192     #other color
+addi $3,$0,0       #base address
+addi $8,$0,1       #for SELECT
+
+jal SHOW
+addi $6,$0,0       #for jal    
+
+BEGIN:
+jal INPUT
+addi $6, $0,0
+jal CLEAR
+addi $6,$0,0
+jal SELECT         #calculate the position of color block
+addi $6,$0,0
+jal SHOW
+addi $6,$0,0
+jal DELAY
+addi $6,$0,0
+j BEGIN
+
+SHOW:
+sw $2,2048($3)
+jr $31
+
+CLEAR:
+sw $1,2048($3)
+jr $31
+
+INPUT:
+lw $7,1028($0)
+beq $7,$0,INPUT  #invalid or blank instruct
+jr $31
+
+SELECT:
+and $9,$7,$8
+sll $9,$9,2
+add $3,$3,$9
+srl $7,$7,1
+and $9,$7,$8
+sll $9,$9,2
+sub $3,$3,$9
+srl $7,$7,1
+and $9,$7,$8
+sll $10,$9,3
+sll $9,$9,5
+add $9,$9,$10
+add $3,$3,$9
+srl $7,$7,1
+and $9,$7,$8
+sll $10,$9,3
+sll $9,$9,5
+add $9,$9,$10
+sub $3,$3,$9
+srl $7,$7,1
+jr $31
+
+DELAY:
+lui $11,0x0040
+addi $12,$0,0
+loop:
+addi $12,$12,1
+bne $12,$11,loop
+jr $31
+
