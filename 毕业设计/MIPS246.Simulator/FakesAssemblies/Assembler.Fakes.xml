@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assembler.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:MIPS246.Core.Assembler.Fakes.ShimAssembler">
+            <summary>Shim type of MIPS246.Core.Assembler.Assembler</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.ShimAssembler.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.ShimAssembler.#ctor(MIPS246.Core.Assembler.Assembler)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.ShimAssembler.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.ShimAssembler.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AssembleInstructions">
+            <summary>Sets the shim of Assembler.AssembleInstructions()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CalculOffset">
+            <summary>Sets the shim of Assembler.CalculOffset()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CheckAddressString">
+            <summary>Sets the shim of Assembler.CheckAddress(String addressname)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CheckRegisterString">
+            <summary>Sets the shim of Assembler.CheckRegister(String reg)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CheckShamtString">
+            <summary>Sets the shim of Assembler.CheckShamt(String i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CheckVariableNameString">
+            <summary>Sets the shim of Assembler.CheckVariableName(String name)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CheckWord">
+            <summary>Sets the shim of Assembler.CheckWord()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CodeIndexTableGet">
+            <summary>Sets the shim of Assembler.get_CodeIndexTable()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CodeIndexTableSetHashtable">
+            <summary>Sets the shim of Assembler.set_CodeIndexTable(Hashtable value)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.CodeListGet">
+            <summary>Sets the shim of Assembler.get_CodeList()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.Constructor">
+            <summary>Sets the shim of Assembler.Assembler()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.ConstructorListOfString">
+            <summary>Sets the shim of Assembler.Assembler(List`1&lt;String&gt; sourceString)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.ConstructorString">
+            <summary>Sets the shim of Assembler.Assembler(String sourceCode)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.ConstructorStringString">
+            <summary>Sets the shim of Assembler.Assembler(String sourcepath, String outputpath)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.ConvertAddressString">
+            <summary>Sets the shim of Assembler.ConvertAddress(String addressname)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.DisplayBoolean">
+            <summary>Sets the shim of Assembler.Display(Boolean isBinary)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.DisplayError">
+            <summary>Sets the shim of Assembler.DisplayError()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.DoAssemble">
+            <summary>Sets the shim of Assembler.DoAssemble()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.ErrorGet">
+            <summary>Sets the shim of Assembler.get_Error()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.FormatHexBooleanArray">
+            <summary>Sets the shim of Assembler.FormatHex(Boolean[] boolArray)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.InitInstructionAddress">
+            <summary>Sets the shim of Assembler.InitInstructionAddress()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.LinetableGet">
+            <summary>Sets the shim of Assembler.get_Linetable()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.LinetableSetHashtable">
+            <summary>Sets the shim of Assembler.set_Linetable(Hashtable value)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.LoadAddress">
+            <summary>Sets the shim of Assembler.LoadAddress()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.LoadFile">
+            <summary>Sets the shim of Assembler.LoadFile()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_ADDIInt32">
+            <summary>Sets the shim of Assembler.OP_ADDI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_ADDIUInt32">
+            <summary>Sets the shim of Assembler.OP_ADDIU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_ADDInt32">
+            <summary>Sets the shim of Assembler.OP_ADD(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_ADDUInt32">
+            <summary>Sets the shim of Assembler.OP_ADDU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_ANDIInt32">
+            <summary>Sets the shim of Assembler.OP_ANDI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_ANDInt32">
+            <summary>Sets the shim of Assembler.OP_AND(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_BEQInt32">
+            <summary>Sets the shim of Assembler.OP_BEQ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_BGEZALInt32">
+            <summary>Sets the shim of Assembler.OP_BGEZAL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_BGEZInt32">
+            <summary>Sets the shim of Assembler.OP_BGEZ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_BGTZInt32">
+            <summary>Sets the shim of Assembler.OP_BGTZ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_BLEZInt32">
+            <summary>Sets the shim of Assembler.OP_BLEZ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_BLTZALInt32">
+            <summary>Sets the shim of Assembler.OP_BLTZAL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_BLTZInt32">
+            <summary>Sets the shim of Assembler.OP_BLTZ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_BNEInt32">
+            <summary>Sets the shim of Assembler.OP_BNE(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_JALInt32">
+            <summary>Sets the shim of Assembler.OP_JAL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_JALRInt32">
+            <summary>Sets the shim of Assembler.OP_JALR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_JInt32">
+            <summary>Sets the shim of Assembler.OP_J(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_JRInt32">
+            <summary>Sets the shim of Assembler.OP_JR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_LAInt32">
+            <summary>Sets the shim of Assembler.OP_LA(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_LBInt32">
+            <summary>Sets the shim of Assembler.OP_LB(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_LBUInt32">
+            <summary>Sets the shim of Assembler.OP_LBU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_LHInt32">
+            <summary>Sets the shim of Assembler.OP_LH(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_LHUInt32">
+            <summary>Sets the shim of Assembler.OP_LHU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_LIInt32">
+            <summary>Sets the shim of Assembler.OP_LI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_LUIInt32">
+            <summary>Sets the shim of Assembler.OP_LUI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_LWInt32">
+            <summary>Sets the shim of Assembler.OP_LW(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_MOVEInt32">
+            <summary>Sets the shim of Assembler.OP_MOVE(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_NOPInt32">
+            <summary>Sets the shim of Assembler.OP_NOP(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_NORInt32">
+            <summary>Sets the shim of Assembler.OP_NOR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_ORIInt32">
+            <summary>Sets the shim of Assembler.OP_ORI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_ORInt32">
+            <summary>Sets the shim of Assembler.OP_OR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SBInt32">
+            <summary>Sets the shim of Assembler.OP_SB(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SHInt32">
+            <summary>Sets the shim of Assembler.OP_SH(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SLLInt32">
+            <summary>Sets the shim of Assembler.OP_SLL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SLLVInt32">
+            <summary>Sets the shim of Assembler.OP_SLLV(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SLTIInt32">
+            <summary>Sets the shim of Assembler.OP_SLTI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SLTIUInt32">
+            <summary>Sets the shim of Assembler.OP_SLTIU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SLTInt32">
+            <summary>Sets the shim of Assembler.OP_SLT(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SLTUInt32">
+            <summary>Sets the shim of Assembler.OP_SLTU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SRAInt32">
+            <summary>Sets the shim of Assembler.OP_SRA(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SRAVInt32">
+            <summary>Sets the shim of Assembler.OP_SRAV(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SRLInt32">
+            <summary>Sets the shim of Assembler.OP_SRL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SRLVInt32">
+            <summary>Sets the shim of Assembler.OP_SRLV(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SUBIInt32">
+            <summary>Sets the shim of Assembler.OP_SUBI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SUBInt32">
+            <summary>Sets the shim of Assembler.OP_SUB(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SUBUInt32">
+            <summary>Sets the shim of Assembler.OP_SUBU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SWInt32">
+            <summary>Sets the shim of Assembler.OP_SW(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_SYSCALLInt32">
+            <summary>Sets the shim of Assembler.OP_SYSCALL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_XORIInt32">
+            <summary>Sets the shim of Assembler.OP_XORI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OP_XORInt32">
+            <summary>Sets the shim of Assembler.OP_XOR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.OutputBooleanStringBoolean">
+            <summary>Sets the shim of Assembler.Output(Boolean isoutputCOE, String outputpath, Boolean isHEX)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.RawSourceGet">
+            <summary>Sets the shim of Assembler.get_RawSource()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.RawSourceSetListOfString">
+            <summary>Sets the shim of Assembler.set_RawSource(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.RemoveCommentString">
+            <summary>Sets the shim of Assembler.RemoveComment(String str)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.SetAddress0String">
+            <summary>Sets the shim of Assembler.SetAddress0(String label)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.SourceListGet">
+            <summary>Sets the shim of Assembler.get_SourceList()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.StaticConstructor">
+            <summary>Sets the shim of Assembler.Assembler()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.WriteBackAddress">
+            <summary>Sets the shim of Assembler.WriteBackAddress()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.addAddresstableStringInt32">
+            <summary>Sets the shim of Assembler.addAddresstable(String addressname, Int32 address)</summary>
+        </member>
+        <member name="T:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.AssembleInstructions">
+            <summary>Sets the shim of Assembler.AssembleInstructions()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CalculOffset">
+            <summary>Sets the shim of Assembler.CalculOffset()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CheckAddressString">
+            <summary>Sets the shim of Assembler.CheckAddress(String addressname)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CheckRegisterString">
+            <summary>Sets the shim of Assembler.CheckRegister(String reg)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CheckShamtString">
+            <summary>Sets the shim of Assembler.CheckShamt(String i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CheckVariableNameString">
+            <summary>Sets the shim of Assembler.CheckVariableName(String name)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CheckWord">
+            <summary>Sets the shim of Assembler.CheckWord()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CodeIndexTableGet">
+            <summary>Sets the shim of Assembler.get_CodeIndexTable()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CodeIndexTableSetHashtable">
+            <summary>Sets the shim of Assembler.set_CodeIndexTable(Hashtable value)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.CodeListGet">
+            <summary>Sets the shim of Assembler.get_CodeList()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.ConvertAddressString">
+            <summary>Sets the shim of Assembler.ConvertAddress(String addressname)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.ConvertImmediateInt32StringInt32OutBoolean">
+            <summary>Sets the shim of Assembler.ConvertImmediate(Int32 i, String str, Int32&amp; intvalue, Boolean sign)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.DisplayBoolean">
+            <summary>Sets the shim of Assembler.Display(Boolean isBinary)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.DisplayError">
+            <summary>Sets the shim of Assembler.DisplayError()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.DoAssemble">
+            <summary>Sets the shim of Assembler.DoAssemble()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.ErrorGet">
+            <summary>Sets the shim of Assembler.get_Error()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.FormatHexBooleanArray">
+            <summary>Sets the shim of Assembler.FormatHex(Boolean[] boolArray)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.InitInstructionAddress">
+            <summary>Sets the shim of Assembler.InitInstructionAddress()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.LinetableGet">
+            <summary>Sets the shim of Assembler.get_Linetable()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.LinetableSetHashtable">
+            <summary>Sets the shim of Assembler.set_Linetable(Hashtable value)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.LoadAddress">
+            <summary>Sets the shim of Assembler.LoadAddress()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.LoadFile">
+            <summary>Sets the shim of Assembler.LoadFile()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_ADDIInt32">
+            <summary>Sets the shim of Assembler.OP_ADDI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_ADDIUInt32">
+            <summary>Sets the shim of Assembler.OP_ADDIU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_ADDInt32">
+            <summary>Sets the shim of Assembler.OP_ADD(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_ADDUInt32">
+            <summary>Sets the shim of Assembler.OP_ADDU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_ANDIInt32">
+            <summary>Sets the shim of Assembler.OP_ANDI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_ANDInt32">
+            <summary>Sets the shim of Assembler.OP_AND(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_BEQInt32">
+            <summary>Sets the shim of Assembler.OP_BEQ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_BGEZALInt32">
+            <summary>Sets the shim of Assembler.OP_BGEZAL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_BGEZInt32">
+            <summary>Sets the shim of Assembler.OP_BGEZ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_BGTZInt32">
+            <summary>Sets the shim of Assembler.OP_BGTZ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_BLEZInt32">
+            <summary>Sets the shim of Assembler.OP_BLEZ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_BLTZALInt32">
+            <summary>Sets the shim of Assembler.OP_BLTZAL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_BLTZInt32">
+            <summary>Sets the shim of Assembler.OP_BLTZ(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_BNEInt32">
+            <summary>Sets the shim of Assembler.OP_BNE(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_JALInt32">
+            <summary>Sets the shim of Assembler.OP_JAL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_JALRInt32">
+            <summary>Sets the shim of Assembler.OP_JALR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_JInt32">
+            <summary>Sets the shim of Assembler.OP_J(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_JRInt32">
+            <summary>Sets the shim of Assembler.OP_JR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_LAInt32">
+            <summary>Sets the shim of Assembler.OP_LA(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_LBInt32">
+            <summary>Sets the shim of Assembler.OP_LB(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_LBUInt32">
+            <summary>Sets the shim of Assembler.OP_LBU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_LHInt32">
+            <summary>Sets the shim of Assembler.OP_LH(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_LHUInt32">
+            <summary>Sets the shim of Assembler.OP_LHU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_LIInt32">
+            <summary>Sets the shim of Assembler.OP_LI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_LUIInt32">
+            <summary>Sets the shim of Assembler.OP_LUI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_LWInt32">
+            <summary>Sets the shim of Assembler.OP_LW(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_MOVEInt32">
+            <summary>Sets the shim of Assembler.OP_MOVE(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_NOPInt32">
+            <summary>Sets the shim of Assembler.OP_NOP(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_NORInt32">
+            <summary>Sets the shim of Assembler.OP_NOR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_ORIInt32">
+            <summary>Sets the shim of Assembler.OP_ORI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_ORInt32">
+            <summary>Sets the shim of Assembler.OP_OR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SBInt32">
+            <summary>Sets the shim of Assembler.OP_SB(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SHInt32">
+            <summary>Sets the shim of Assembler.OP_SH(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SLLInt32">
+            <summary>Sets the shim of Assembler.OP_SLL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SLLVInt32">
+            <summary>Sets the shim of Assembler.OP_SLLV(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SLTIInt32">
+            <summary>Sets the shim of Assembler.OP_SLTI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SLTIUInt32">
+            <summary>Sets the shim of Assembler.OP_SLTIU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SLTInt32">
+            <summary>Sets the shim of Assembler.OP_SLT(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SLTUInt32">
+            <summary>Sets the shim of Assembler.OP_SLTU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SRAInt32">
+            <summary>Sets the shim of Assembler.OP_SRA(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SRAVInt32">
+            <summary>Sets the shim of Assembler.OP_SRAV(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SRLInt32">
+            <summary>Sets the shim of Assembler.OP_SRL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SRLVInt32">
+            <summary>Sets the shim of Assembler.OP_SRLV(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SUBIInt32">
+            <summary>Sets the shim of Assembler.OP_SUBI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SUBInt32">
+            <summary>Sets the shim of Assembler.OP_SUB(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SUBUInt32">
+            <summary>Sets the shim of Assembler.OP_SUBU(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SWInt32">
+            <summary>Sets the shim of Assembler.OP_SW(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_SYSCALLInt32">
+            <summary>Sets the shim of Assembler.OP_SYSCALL(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_XORIInt32">
+            <summary>Sets the shim of Assembler.OP_XORI(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OP_XORInt32">
+            <summary>Sets the shim of Assembler.OP_XOR(Int32 i)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.OutputBooleanStringBoolean">
+            <summary>Sets the shim of Assembler.Output(Boolean isoutputCOE, String outputpath, Boolean isHEX)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.RawSourceGet">
+            <summary>Sets the shim of Assembler.get_RawSource()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.RawSourceSetListOfString">
+            <summary>Sets the shim of Assembler.set_RawSource(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.RemoveCommentString">
+            <summary>Sets the shim of Assembler.RemoveComment(String str)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.SetAddress0String">
+            <summary>Sets the shim of Assembler.SetAddress0(String label)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.SourceListGet">
+            <summary>Sets the shim of Assembler.get_SourceList()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.WriteBackAddress">
+            <summary>Sets the shim of Assembler.WriteBackAddress()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssembler.AllInstances.addAddresstableStringInt32">
+            <summary>Sets the shim of Assembler.addAddresstable(String addressname, Int32 address)</summary>
+        </member>
+        <member name="T:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo">
+            <summary>Shim type of MIPS246.Core.Assembler.AssemblerErrorInfo</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.#ctor(MIPS246.Core.Assembler.AssemblerErrorInfo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.ConsoleDisplay">
+            <summary>Sets the shim of AssemblerErrorInfo.ConsoleDisplay()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.ConstructorInt32AssemblerError">
+            <summary>Sets the shim of AssemblerErrorInfo.AssemblerErrorInfo(Int32 line, AssemblerError assemblererror)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.ConstructorInt32AssemblerErrorString">
+            <summary>Sets the shim of AssemblerErrorInfo.AssemblerErrorInfo(Int32 line, AssemblerError assemblererror, String description)</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.ToString">
+            <summary>Sets the shim of AssemblerErrorInfo.ToString()</summary>
+        </member>
+        <member name="T:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.AllInstances.ConsoleDisplay">
+            <summary>Sets the shim of AssemblerErrorInfo.ConsoleDisplay()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.ShimAssemblerErrorInfo.AllInstances.ToString01">
+            <summary>Sets the shim of AssemblerErrorInfo.ToString()</summary>
+        </member>
+        <member name="T:MIPS246.Core.Assembler.Fakes.StubAssembler">
+            <summary>Stub type of MIPS246.Core.Assembler.Assembler</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssembler.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssembler.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssembler.#ctor(System.Collections.Generic.List{System.String})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssembler.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssembler.InitializeStub">
+            <summary>Initializes a new instance of type StubAssembler</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.StubAssembler.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.StubAssembler.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.StubAssembler.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo">
+            <summary>Stub type of MIPS246.Core.Assembler.AssemblerErrorInfo</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo.#ctor(System.Int32,MIPS246.Core.Assembler.AssemblerError)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo.#ctor(System.Int32,MIPS246.Core.Assembler.AssemblerError,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo.InitializeStub">
+            <summary>Initializes a new instance of type StubAssemblerErrorInfo</summary>
+        </member>
+        <member name="M:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo.ToString">
+            <summary>Sets the stub of AssemblerErrorInfo.ToString()</summary>
+        </member>
+        <member name="F:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo.ToString01">
+            <summary>Sets the stub of AssemblerErrorInfo.ToString()</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MIPS246.Core.Assembler.Fakes.StubAssemblerErrorInfo.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.AssemblerDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of Assembler</summary>
+        </member>
+    </members>
+</doc>

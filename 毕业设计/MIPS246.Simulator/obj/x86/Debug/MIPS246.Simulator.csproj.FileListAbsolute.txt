@@ -1,0 +1,12 @@
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\obj\x86\Debug\MIPS246.Simulator.csprojResolveAssemblyReference.cache
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\obj\x86\Debug\MipsSimulator.About.resources
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\obj\x86\Debug\MipsSimulator.Form1.resources
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\obj\x86\Debug\MipsSimulator.Form2.resources
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\obj\x86\Debug\MipsSimulator.Properties.Resources.resources
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\obj\x86\Debug\MIPS246.Simulator.csproj.GenerateResource.Cache
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\bin\Debug\MipsSimulator.exe.config
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\bin\Debug\MipsSimulator.exe
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\bin\Debug\MipsSimulator.pdb
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\obj\x86\Debug\MipsSimulator.exe
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\obj\x86\Debug\MipsSimulator.pdb

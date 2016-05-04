@@ -1,0 +1,6 @@
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\Fakes\Assembler.fakes : warning : Cannot generate stub for MIPS246.Core.Assembler.AssemblerError: type is a value type.
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\Fakes\Assembler.fakes : warning : Cannot generate stub for Assembler.Properties.Settings: type is sealed.
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\Fakes\Assembler.fakes : warning : Cannot generate stub for <PrivateImplementationDetails>{C883857E-5C67-4407-B653-28F271B6BE53}: type is not supported because of internal limitations.
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\Fakes\Assembler.fakes : warning : Cannot generate shim for MIPS246.Core.Assembler.AssemblerError: type is an enum.
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\Fakes\Assembler.fakes : warning : Cannot generate shim for Assembler.Properties.Settings: type is not visible to exported or assembly(Assembler.Fakes).
+C:\Users\JLC\Downloads\MIPS246Simulator\MIPS246.Simulator\Fakes\Assembler.fakes : warning : Cannot generate shim for <PrivateImplementationDetails>{C883857E-5C67-4407-B653-28F271B6BE53}: type is not supported because of internal limitations.

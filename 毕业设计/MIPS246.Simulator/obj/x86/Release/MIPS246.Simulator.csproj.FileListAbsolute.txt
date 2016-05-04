@@ -1,0 +1,14 @@
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\bin\Release\MipsSimulator.exe
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\bin\Release\MipsSimulator.pdb
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\bin\Release\Assembler.dll
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\bin\Release\DataStructure.dll
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\bin\Release\Assembler.pdb
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\bin\Release\DataStructure.pdb
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\obj\x86\Release\MIPS246.Simulator.csprojResolveAssemblyReference.cache
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\obj\x86\Release\MipsSimulator.About.resources
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\obj\x86\Release\MipsSimulator.Form1.resources
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\obj\x86\Release\MipsSimulator.Form2.resources
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\obj\x86\Release\MipsSimulator.Properties.Resources.resources
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\obj\x86\Release\MIPS246.Simulator.csproj.GenerateResource.Cache
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\obj\x86\Release\MipsSimulator.exe
+C:\MIPS246_Software\MIPS246\MIPS246.Simulator\obj\x86\Release\MipsSimulator.pdb
